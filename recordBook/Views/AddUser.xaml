@@ -1,0 +1,20 @@
+﻿<Window x:Class="recordBook.Views.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:recordBook.Views"
+        mc:Ignorable="d"
+        Title="AddUser" Height="504" Width="493">
+    <Grid Margin="0,0,10,7">
+     
+        <Label Content="Name" HorizontalAlignment="Left" Margin="35,46,0,0" VerticalAlignment="Top" Width="47" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Name}" Margin="35,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="28"/>
+        
+        <Label Content="Email" HorizontalAlignment="Left" Margin="35,126,0,0" VerticalAlignment="Top" Width="47" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Email}" Margin="35,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="28" />
+
+        <Button Content="+   Add" Command="{Binding AddUserCommand}" HorizontalAlignment="Left" Height="39" Margin="356,400,0,0" VerticalAlignment="Top" Width="97" Background="#FF0C0C0C" Foreground="#FFFDFCFC" FontSize="16" />
+
+    </Grid>
+</Window>
